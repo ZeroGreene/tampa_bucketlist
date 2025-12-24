@@ -1,0 +1,210 @@
+
+cost $6,000
+time usually?
+===========================
+Below is a **practical, ethical checklist of do’s and don’ts** for conducting a **black-box penetration test** on a **small business**. This is written from a professional, defensive security perspective (not how to commit wrongdoing).
+
+---
+
+## ✅ DO’s (Best Practices)
+
+### 1. **Get Explicit Written Authorization**
+
+* Have a **signed Rules of Engagement (RoE)** or permission letter.
+* Define:
+
+  * Scope (IP ranges, domains, apps)
+  * Time window
+  * Allowed techniques
+  * Emergency contacts
+    👉 Without this, testing is **illegal**, even if intentions are good.
+
+---
+
+### 2. **Limit Scope Carefully**
+
+* Only test **what you are allowed to test**.
+* Respect exclusions like:
+
+  * Production databases
+  * Third-party systems
+  * Payment processors (PCI environments)
+
+Small businesses often have fragile systems — stay controlled.
+
+---
+
+### 3. **Use Recon Like a Real Attacker (But Responsibly)**
+
+Allowed black-box recon usually includes:
+
+* DNS enumeration
+* Subdomain discovery
+* Port scanning
+* OSINT (public info, leaked creds, exposed services)
+
+Log **everything** you do for reporting later.
+
+---
+
+### 4. **Focus on High-Risk, High-Impact Issues**
+
+Prioritize:
+
+* Exposed admin panels
+* Weak authentication
+* Outdated software
+* Default credentials
+* Misconfigured cloud services
+* Injection flaws (SQLi, command injection)
+* Broken access control
+
+Small businesses benefit more from fixing **realistic threats** than obscure edge cases.
+
+---
+
+### 5. **Throttle Your Attacks**
+
+* Rate-limit scans and brute-force attempts.
+* Avoid DoS-like behavior.
+* Test during approved hours.
+
+If you knock their website offline, you’ve failed the test.
+
+---
+
+### 6. **Prove Exploitation Safely**
+
+* Demonstrate impact **without causing damage**
+
+  * Read-only access
+  * Non-destructive payloads
+* Use screenshots, logs, or hashes instead of deleting or altering data.
+
+---
+
+### 7. **Report Clearly and Actionably**
+
+Your final report should include:
+
+* Executive summary (non-technical)
+* Risk level (Critical / High / Medium / Low)
+* Proof of concept
+* Business impact
+* Clear remediation steps
+
+Small businesses often don’t have security teams — clarity matters.
+
+---
+
+## ❌ DON’Ts (Critical Mistakes)
+
+### 1. **Do NOT Test Without Permission**
+
+Even passive scanning without authorization can:
+
+* Trigger legal action
+* Violate laws (CFAA, Computer Misuse Act, etc.)
+* Damage trust permanently
+
+---
+
+### 2. **Do NOT Exfiltrate Sensitive Data**
+
+Never download:
+
+* Customer PII
+* Financial records
+* Password databases
+* Emails or private documents
+
+Instead, prove access with minimal evidence.
+
+---
+
+### 3. **Do NOT Use Destructive Payloads**
+
+Avoid:
+
+* Ransomware simulations
+* Data deletion
+* Service crashes
+* Crypto-miners
+* Persistence/backdoors (unless explicitly approved)
+
+Black-box ≠ reckless.
+
+---
+
+### 4. **Do NOT Go Outside Scope “Just to See”**
+
+Common violations:
+
+* Testing employee personal accounts
+* Touching third-party SaaS
+* Attacking shared hosting neighbors
+
+Scope creep can kill a contract and cause legal trouble.
+
+---
+
+### 5. **Do NOT Social Engineer Unless Approved**
+
+Phishing, pretexting, or phone attacks:
+
+* Require **explicit written consent**
+* Often need legal and HR approval
+
+Never assume it’s okay.
+
+---
+
+### 6. **Do NOT Use Real Criminal Infrastructure**
+
+Avoid:
+
+* Known malware C2 servers
+* Stolen exploit kits
+* Tor exit nodes that could flag law enforcement
+
+Use professional, controlled tooling.
+
+---
+
+### 7. **Do NOT Shame or Blame**
+
+In reports or meetings:
+
+* Avoid phrases like “basic mistake” or “negligent”
+* Frame findings as **risk reduction opportunities**
+
+Your goal is improvement, not embarrassment.
+
+---
+
+## ⚠️ Extra Advice for Small Businesses
+
+* Expect **outdated systems**
+* Expect **poor documentation**
+* Expect **shared credentials**
+* Expect **no monitoring**
+
+Be patient, conservative, and educational.
+
+---
+
+## 🧠 Professional Rule of Thumb
+
+> **If a real attacker would do it, you can test it —
+> but only if the business explicitly agreed you could.**
+
+---
+
+If you want, I can:
+
+* Provide a **sample black-box Rules of Engagement**
+* Create a **pentest report template**
+* Help you **design a safe testing methodology**
+* Tailor this advice for **web apps, networks, or cloud**
+
+Just tell me what you’re testing.
